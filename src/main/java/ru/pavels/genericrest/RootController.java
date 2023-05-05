@@ -20,10 +20,10 @@ public class RootController {
             myModel.setDescription("id was 0");
         } else {
             if (myModel.getId() % 2 == 0) {
-                myModel.setId((long) (myModel.getId() * 2));
+                myModel.setId(myModel.getId() * 2);
                 myModel.setDescription("id = id * 2");
             } else {
-                myModel.setId((long) (myModel.getId() * 3));
+                myModel.setId(myModel.getId() * 3);
                 myModel.setDescription("id = id * 3");
             }
         }
